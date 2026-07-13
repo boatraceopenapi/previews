@@ -113,16 +113,16 @@
         },
         {
             "name": "bvp/scraper",
-            "version": "6.1.2",
+            "version": "6.1.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/shimomo/bvp-scraper.git",
-                "reference": "e9af7c3cdd15842ae81071e43f10efc1e73e6f18"
+                "url": "https://github.com/boatracevibeproject/scraper.git",
+                "reference": "4df7281b4f3c556b9bd2bac74b5c2da6f6ca72fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-scraper/zipball/e9af7c3cdd15842ae81071e43f10efc1e73e6f18",
-                "reference": "e9af7c3cdd15842ae81071e43f10efc1e73e6f18",
+                "url": "https://api.github.com/repos/boatracevibeproject/scraper/zipball/4df7281b4f3c556b9bd2bac74b5c2da6f6ca72fc",
+                "reference": "4df7281b4f3c556b9bd2bac74b5c2da6f6ca72fc",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "issues": "https://github.com/shimomo/bvp-scraper/issues",
                 "source": "https://github.com/shimomo/bvp-scraper"
             },
-            "time": "2026-03-23T19:24:05+00:00"
+            "time": "2026-07-11T15:52:19+00:00"
         },
         {
             "name": "bvp/stadium",
@@ -223,12 +223,12 @@
             "version": "6.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/shimomo/bvp-trimmer.git",
+                "url": "https://github.com/boatracevibeproject/trimmer.git",
                 "reference": "1bb7d917dd1de25cf4c0cf6859cb6acae70223c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-trimmer/zipball/1bb7d917dd1de25cf4c0cf6859cb6acae70223c0",
+                "url": "https://api.github.com/repos/boatracevibeproject/trimmer/zipball/1bb7d917dd1de25cf4c0cf6859cb6acae70223c0",
                 "reference": "1bb7d917dd1de25cf4c0cf6859cb6acae70223c0",
                 "shasum": ""
             },
@@ -2125,16 +2125,16 @@
         },
         {
             "name": "amphp/pipeline",
-            "version": "v1.2.5",
+            "version": "v1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/pipeline.git",
-                "reference": "92f121dde31cd1d89d5d0f9eba64ac40271b236e"
+                "reference": "10941bf38de5c585aa2407b2ec4265d806d4eef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/pipeline/zipball/92f121dde31cd1d89d5d0f9eba64ac40271b236e",
-                "reference": "92f121dde31cd1d89d5d0f9eba64ac40271b236e",
+                "url": "https://api.github.com/repos/amphp/pipeline/zipball/10941bf38de5c585aa2407b2ec4265d806d4eef2",
+                "reference": "10941bf38de5c585aa2407b2ec4265d806d4eef2",
                 "shasum": ""
             },
             "require": {
@@ -2180,7 +2180,7 @@
             ],
             "support": {
                 "issues": "https://github.com/amphp/pipeline/issues",
-                "source": "https://github.com/amphp/pipeline/tree/v1.2.5"
+                "source": "https://github.com/amphp/pipeline/tree/v1.2.6"
             },
             "funding": [
                 {
@@ -2188,7 +2188,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-27T14:17:20+00:00"
+            "time": "2026-06-27T16:15:40+00:00"
         },
         {
             "name": "amphp/process",
@@ -5401,16 +5401,16 @@
         },
         {
             "name": "sebastian/exporter",
-            "version": "8.1.0",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "c0d29a945f8cf82f300a05e69874508e307ca4c6"
+                "reference": "cfaa77c750dcad6f44c9bac8f62ac486e1c82c26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/c0d29a945f8cf82f300a05e69874508e307ca4c6",
-                "reference": "c0d29a945f8cf82f300a05e69874508e307ca4c6",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/cfaa77c750dcad6f44c9bac8f62ac486e1c82c26",
+                "reference": "cfaa77c750dcad6f44c9bac8f62ac486e1c82c26",
                 "shasum": ""
             },
             "require": {
@@ -5419,7 +5419,7 @@
                 "sebastian/recursion-context": "^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^13.1.10"
+                "phpunit/phpunit": "^13.2.4"
             },
             "type": "library",
             "extra": {
@@ -5467,7 +5467,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/8.1.0"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/8.1.1"
             },
             "funding": [
                 {
@@ -5487,7 +5487,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-21T11:50:56+00:00"
+            "time": "2026-07-13T11:35:11+00:00"
         },
         {
             "name": "sebastian/git-state",
