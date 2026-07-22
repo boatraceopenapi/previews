@@ -15,13 +15,13 @@ $date = Carbon::parse($date, 'Asia/Tokyo');
 $dateY = $date->format('Y');
 $dateYmd = $date->format('Ymd');
 
-$results = Synchronizer::sync($date);
+$previews = Synchronizer::sync($date);
 
-if ($results === []) {
+if ($previews === []) {
     fwrite(STDOUT, "NO_DATA {$dateYmd}\n");
     exit(2);
 }
 
-Storage::save("docs/{$version}/{$dateY}/{$dateYmd}.json", ['results' => $results]);
+Storage::save("docs/{$version}/{$dateY}/{$dateYmd}.json", ['previews' => $previews]);
 echo "OK {$dateYmd}\n";
 exit(0);

@@ -19,21 +19,21 @@ $yesterdayY = $yesterday->format('Y');
 $yesterdayYmd = $yesterday->format('Ymd');
 
 $payload = [
-    'today' => ['results' => []],
-    'yesterday' => ['results' => []],
+    'today' => ['previews' => []],
+    'yesterday' => ['previews' => []],
 ];
 
 if ($version === 'v2' || $version === 'v3') {
-    $payload['today']['results'] = Synchronizer::sync($today);
-    $payload['yesterday']['results'] = Synchronizer::sync($yesterday);
+    $payload['today']['previews'] = Synchronizer::sync($today);
+    $payload['yesterday']['previews'] = Synchronizer::sync($yesterday);
 }
 
-if ($payload['today']['results'] !== []) {
+if ($payload['today']['previews'] !== []) {
     Storage::save("docs/{$version}/{$todayY}/{$todayYmd}.json", $payload['today']);
     Storage::save("docs/{$version}/today.json", $payload['today']);
 }
 
-if ($payload['yesterday']['results'] !== []) {
+if ($payload['yesterday']['previews'] !== []) {
     Storage::save("docs/{$version}/{$yesterdayY}/{$yesterdayYmd}.json", $payload['yesterday']);
     Storage::save("docs/{$version}/yesterday.json", $payload['yesterday']);
 }

@@ -22,7 +22,7 @@ final class Synchronizer
         $date = Carbon::parse($date, 'Asia/Tokyo');
 
         /** @var array<array-key, array<array-key, array<array-key, array{boats: array<mixed>}>>> $previews */
-        $previews = Scraper::scrapePrograms($date);
+        $previews = Scraper::scrapePreviews($date);
 
         return self::normalize($previews);
     }
