@@ -37,7 +37,7 @@
 ```
 
 - `previews` はその日の全レースの配列です。
-- `boats` は出走艇の配列で、通常は `racer_boat_number`（枠番）`1`〜`6` の 6 要素です（例外は「[データの注意点](#データの注意点)」を参照）。
+- `boats` は出走艇の配列で、`racer_boat_number`（枠番）`1`〜`6` の 6 要素です。
 - レースのキーは `(date, stadium_number, number)`、出走艇のキーはそれに `racer_boat_number` を加えたものです。
 
 ---
@@ -82,7 +82,7 @@
 
 - 中止になったレースは、レースと出走艇の値が `null` です。
 - 欠場した艇や直前情報が取れなかった艇は、`racer_course_number`・`racer_start_timing` が `null` で、`racer_exhibition_time`・`racer_weight` が `0` になっていることがあります。`racer_exhibition_time` と `racer_weight` の `0` は、値がないものとして扱ってください。
-- 欠場した艇がいるレースで、`racer_boat_number` が `0` の 7 つ目の要素が入っていることがあります（v3 全期間で 25 レース）。この要素は `racer_boat_number`・`racer_course_number`・`racer_start_timing` だけを持ちます。`racer_boat_number` が `1`〜`6` の要素だけを使ってください。
+- スタート展示に出なかった艇がいるレースで `racer_boat_number` が `0` の 7 つ目の要素が入っていた誤りは、2026 年 11 月に全期間のファイルで直しました。
 - 直前情報は締切前に分かる情報ですが、本 API は約 3 時間ごとの取得なので、締切前の時点のデータがあるとは限りません。
 - 当日のファイルは途中の状態です。確定した過去データとして使うのは、翌々日以降に取得したファイルにしてください。
 
