@@ -71,20 +71,38 @@ https://boatraceopenapi.github.io/previews/v2/YYYY/YYYYMMDD.json
 
 > **データが存在しない日付**（対応期間外・未来日付など）を指定した場合、GitHub Pages の仕様により **HTTP 404** が返されます。
 
+## 📦 レスポンス仕様
+
+レスポンスの JSON 構造・各フィールドの詳細・v2 との違いについては、スキーマドキュメントを参照してください。
+
+→ [docs/schema.md](docs/schema.md)
+
+`stadium_number`（レース場）や `wind_direction_number`（風向）などのコード値の意味は、後継 API のコード表を参照してください。
+
+→ [boatraceopenapi/api の docs/v1/codes.md](https://github.com/boatraceopenapi/api/blob/gh-pages/docs/v1/codes.md)
+
+## 🤖 AI エージェントで利用する場合
+
+Claude Code や Codex などの AI エージェントにデータの取り込みや分析を任せる場合は、次の URL を読ませてください。
+
+```
+https://boatraceopenapi.github.io/previews/llms.txt
+```
+
 ## 🧩 サンプル
 
 ### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v3-blue)](https://github.com/boatraceopenapi/previews/tree/gh-pages/docs/v3)
 
-- 2025年05月01日の出走表
+- 2025年05月01日の直前情報
   - [https://boatraceopenapi.github.io/previews/v3/2025/20250501.json](https://boatraceopenapi.github.io/previews/v3/2025/20250501.json)
-- 本日の出走表（ JST〔UTC+9〕基準 ）
+- 本日の直前情報（ JST〔UTC+9〕基準 ）
   - [https://boatraceopenapi.github.io/previews/v3/today.json](https://boatraceopenapi.github.io/previews/v3/today.json)
 
 ### [![v2](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v2-lightgrey)](https://github.com/boatraceopenapi/previews/tree/gh-pages/docs/v2)
 
-- 2025年05月01日の出走表
+- 2025年05月01日の直前情報
   - [https://boatraceopenapi.github.io/previews/v2/2025/20250501.json](https://boatraceopenapi.github.io/previews/v2/2025/20250501.json)
-- 本日の出走表（ JST〔UTC+9〕基準 ）
+- 本日の直前情報（ JST〔UTC+9〕基準 ）
   - [https://boatraceopenapi.github.io/previews/v2/today.json](https://boatraceopenapi.github.io/previews/v2/today.json)
 
 ## 🔗 関連リポジトリ
@@ -92,6 +110,8 @@ https://boatraceopenapi.github.io/previews/v2/YYYY/YYYYMMDD.json
 | 🏷️ 対象 | 📂 リポジトリ |
 |:--|:--|
 | 🆕 後継 API | [boatraceopenapi/api](https://github.com/boatraceopenapi/api) |
+| 出走表 | [boatraceopenapi/programs](https://github.com/boatraceopenapi/programs) |
+| 結果 | [boatraceopenapi/results](https://github.com/boatraceopenapi/results) |
 
 ## 📄 ライセンス
 
